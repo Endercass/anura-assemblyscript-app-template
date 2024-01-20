@@ -1,0 +1,20 @@
+{
+  "name": "anura-assemblyscript-app-template",
+  "version": "1.0.0",
+  "description": "AnuraOS AssemblyScript App Template",
+  "scripts": {
+    "build": "npx tsc; globstar -- cp -r public/**/* build/; globstar -- npx asc --config asconfig.json assembly/**/*.ts; cp node_modules/@mercuryworkshop/alicejs/index.js build/AliceJS.js; globstar -- sed -i 's/@wasm/.\\/wasm/g' build/dist/**.js",
+    "package": "npm run build; node package.js"
+  },
+  "author": "Endercass <https://github.com/Endercass>",
+  "license": "ISC",
+  "devDependencies": {
+    "assemblyscript": "^0.27.23",
+    "globstar": "^1.0.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@mercuryworkshop/alicejs": "^1.1.3",
+    "archiver": "^6.0.1"
+  }
+}

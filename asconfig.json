@@ -1,0 +1,16 @@
+{
+  "targets": {
+    "release": {
+      "outFile": "build/dist/wasm/dist.wasm",
+      "textFile": "build/dist/wasm/dist.wat",
+      "sourceMap": true,
+      "optimizeLevel": 3,
+      "shrinkLevel": 0,
+      "converge": false,
+      "noAssert": false
+    }
+  },
+  "options": {
+    "bindings": "esm"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Anura AssemblyScript Template",
+  "type": "auto",
+  "package": "anura.template.assemblyscript",
+  "index": "index.html",
+  "icon": "libtest.png",
+  "wininfo": {
+    "title": "Anura AssemblyScript Template",
+    "width": "800px",
+    "height": "600px"
+  }
+}
